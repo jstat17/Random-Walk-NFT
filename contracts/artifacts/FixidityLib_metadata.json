@@ -1,0 +1,662 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "abs",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y",
+						"type": "int256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_originDigits",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_destinationDigits",
+						"type": "uint8"
+					}
+				],
+				"name": "convertFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "digits",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y",
+						"type": "int256"
+					}
+				],
+				"name": "divide",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "fixed1",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "fractional",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "fromFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_destinationDigits",
+						"type": "uint8"
+					}
+				],
+				"name": "fromFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "integer",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxFixedAdd",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxFixedDiv",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxFixedDivisor",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxFixedMul",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxFixedSub",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxInt256",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "maxNewFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minInt256",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "minNewFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "mulPrecision",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y",
+						"type": "int256"
+					}
+				],
+				"name": "multiply",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "newFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "_originDigits",
+						"type": "uint8"
+					}
+				],
+				"name": "newFixed",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "numerator",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "denominator",
+						"type": "int256"
+					}
+				],
+				"name": "newFixedFraction",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					}
+				],
+				"name": "reciprocal",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y",
+						"type": "int256"
+					}
+				],
+				"name": "subtract",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Gadi Guy, Alberto Cuesta CanadaJohn Michael Statheros (GitHub: jstat17)",
+			"kind": "dev",
+			"methods": {
+				"abs(int256)": {
+					"details": " Test abs(0) returns 0 Test abs(fixed1()) returns -fixed1() Test abs(-fixed1()) returns fixed1() Test abs(newFixed(maxNewFixed())) returns maxNewFixed()*fixed1() Test abs(newFixed(minNewFixed())) returns -minNewFixed()*fixed1()"
+				},
+				"add(int256,int256)": {
+					"details": " Test add(maxFixedAdd(),maxFixedAdd()) returns maxInt256()-1 Test add(maxFixedAdd()+1,maxFixedAdd()+1) fails Test add(-maxFixedSub(),-maxFixedSub()) returns minInt256() Test add(-maxFixedSub()-1,-maxFixedSub()-1) fails Test add(maxInt256(),maxInt256()) fails Test add(minInt256(),minInt256()) fails"
+				},
+				"convertFixed(int256,uint8,uint8)": {
+					"details": " Test convertFixed(1,0,0) returns 1; Test convertFixed(1,1,1) returns 1; Test convertFixed(1,1,0) returns 0; Test convertFixed(1,0,1) returns 10; Test convertFixed(10,1,0) returns 1; Test convertFixed(10,0,1) returns 100; Test convertFixed(100,1,0) returns 10; Test convertFixed(100,0,1) returns 1000; Test convertFixed(1000,2,0) returns 10; Test convertFixed(1000,0,2) returns 100000; Test convertFixed(1000,2,1) returns 100; Test convertFixed(1000,1,2) returns 10000; Test convertFixed(maxInt256,1,0) returns maxInt256/10; Test convertFixed(maxInt256,0,1) throws Test convertFixed(maxInt256,38,0) returns maxInt256/(10**38); Test convertFixed(1,0,38) returns 10**38; Test convertFixed(maxInt256,39,0) throws Test convertFixed(1,0,39) throws"
+				},
+				"divide(int256,int256)": {
+					"details": " Test divide(fixed1(),0) fails Test divide(maxFixedDiv(),1) = maxFixedDiv()*(10^digits()) Test divide(maxFixedDiv()+1,1) throws Test divide(maxFixedDiv(),maxFixedDiv()) returns fixed1()"
+				},
+				"fixed1()": {
+					"details": "Test fixed1() equals 10^digits() Hardcoded to 24 digits."
+				},
+				"fractional(int256)": {
+					"details": " Test fractional(0) returns 0 Test fractional(fixed1()) returns 0 Test fractional(fixed1()-1) returns 10^24-1 Test fractional(-fixed1()) returns 0 Test fractional(-fixed1()+1) returns -10^24-1"
+				},
+				"integer(int256)": {
+					"details": " Test integer(0) returns 0 Test integer(fixed1()) returns fixed1() Test integer(newFixed(maxNewFixed())) returns maxNewFixed()*fixed1() Test integer(-fixed1()) returns -fixed1() Test integer(newFixed(-maxNewFixed())) returns -maxNewFixed()*fixed1()"
+				},
+				"maxFixedAdd()": {
+					"details": "Test maxFixedAdd() equals maxInt256()-1 / 2 Test add(maxFixedAdd(),maxFixedAdd()) equals maxFixedAdd() + maxFixedAdd() Test add(maxFixedAdd()+1,maxFixedAdd()) throws  Test add(-maxFixedAdd(),-maxFixedAdd()) equals -maxFixedAdd() - maxFixedAdd() Test add(-maxFixedAdd(),-maxFixedAdd()-1) throws "
+				},
+				"maxFixedDiv()": {
+					"details": "divide(maxFixedDiv,newFixedFraction(1,fixed1())) = maxInt256(). Test maxFixedDiv() equals maxInt256()/fixed1() Test divide(maxFixedDiv(),multiply(mulPrecision(),mulPrecision())) = maxFixedDiv()*(10^digits()) Test divide(maxFixedDiv()+1,multiply(mulPrecision(),mulPrecision())) throws Hardcoded to 24 digits."
+				},
+				"maxFixedDivisor()": {
+					"details": "Test maxFixedDivisor() equals fixed1()*fixed1() - Or 10**(digits()*2) Test divide(10**(digits()*2 + 1),10**(digits()*2)) = returns 10*fixed1() Test divide(10**(digits()*2 + 1),10**(digits()*2 + 1)) = throws Hardcoded to 24 digits."
+				},
+				"maxFixedMul()": {
+					"details": "Calculated as sqrt(maxInt256()*fixed1()).  Be careful with your sqrt() implementation. I couldn't find a calculator that would give the exact square root of maxInt256*fixed1 so this number is below the real number by no more than 3*10**28. It is safe to use as a limit for your multiplications, although powers of two of numbers over this value might still work. Test multiply(maxFixedMul(),maxFixedMul()) equals maxFixedMul() * maxFixedMul() Test multiply(maxFixedMul(),maxFixedMul()+1) throws  Test multiply(-maxFixedMul(),maxFixedMul()) equals -maxFixedMul() * maxFixedMul() Test multiply(-maxFixedMul(),maxFixedMul()+1) throws  Hardcoded to 24 digits."
+				},
+				"maxFixedSub()": {
+					"details": "Test maxFixedSub() equals minInt256() / 2"
+				},
+				"maxInt256()": {
+					"details": "Test maxInt256() equals 2^255 -1"
+				},
+				"maxNewFixed()": {
+					"details": "deployment.  Test maxNewFixed() equals maxInt256() / fixed1() Hardcoded to 24 digits."
+				},
+				"minInt256()": {
+					"details": "Test minInt256 equals (2^255) * (-1)"
+				},
+				"minNewFixed()": {
+					"details": "Test minNewFixed() equals -(maxInt256()) / fixed1() Hardcoded to 24 digits."
+				},
+				"mulPrecision()": {
+					"details": "Test mulPrecision() equals sqrt(fixed1) Hardcoded to 24 digits."
+				},
+				"multiply(int256,int256)": {
+					"details": " Test multiply(0,0) returns 0 Test multiply(maxFixedMul(),0) returns 0 Test multiply(0,maxFixedMul()) returns 0 Test multiply(maxFixedMul(),fixed1()) returns maxFixedMul() Test multiply(fixed1(),maxFixedMul()) returns maxFixedMul() Test all combinations of (2,-2), (2, 2.5), (2, -2.5) and (0.5, -0.5) Test multiply(fixed1()/mulPrecision(),fixed1()*mulPrecision()) Test multiply(maxFixedMul()-1,maxFixedMul()) equals multiply(maxFixedMul(),maxFixedMul()-1) Test multiply(maxFixedMul(),maxFixedMul()) returns maxInt256() // Probably not to the last digits Test multiply(maxFixedMul()+1,maxFixedMul()) fails Test multiply(maxFixedMul(),maxFixedMul()+1) fails"
+				},
+				"newFixed(int256)": {
+					"details": "Test newFixed(0) returns 0 Test newFixed(1) returns fixed1() Test newFixed(maxNewFixed()) returns maxNewFixed() * fixed1() Test newFixed(maxNewFixed()+1) fails"
+				},
+				"newFixedFraction(int256,int256)": {
+					"details": " Test newFixedFraction(maxFixedDiv()+1,1) fails Test newFixedFraction(1,maxFixedDiv()+1) fails Test newFixedFraction(1,0) fails      Test newFixedFraction(0,1) returns 0 Test newFixedFraction(1,1) returns fixed1() Test newFixedFraction(maxFixedDiv(),1) returns maxFixedDiv()*fixed1() Test newFixedFraction(1,fixed1()) returns 1 Test newFixedFraction(1,fixed1()-1) returns 0"
+				},
+				"reciprocal(int256)": {
+					"details": " Test reciprocal(0) fails Test reciprocal(fixed1()) returns fixed1() Test reciprocal(fixed1()*fixed1()) returns 1 // Testing how the fractional is truncated Test reciprocal(2*fixed1()*fixed1()) returns 0 // Testing how the fractional is truncated"
+				},
+				"subtract(int256,int256)": {
+					"details": "Tests covered by add(x,y)"
+				}
+			},
+			"title": "FixidityLib",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"abs(int256)": {
+					"notice": "Converts to positive if negative. Due to int256 having one more negative number than positive numbers  abs(minInt256) reverts."
+				},
+				"add(int256,int256)": {
+					"notice": "x+y. If any operator is higher than maxFixedAdd() it  might overflow. In solidity maxInt256 + 1 = minInt256 and viceversa."
+				},
+				"convertFixed(int256,uint8,uint8)": {
+					"notice": "Converts an int256 which is already in some fixed point  representation to a different fixed precision representation. Both the origin and destination precisions must be 38 or less digits. Origin values with a precision higher than the destination precision will be truncated accordingly."
+				},
+				"digits()": {
+					"notice": "Number of positions that the comma is shifted to the right."
+				},
+				"divide(int256,int256)": {
+					"notice": "x/y. If the dividend is higher than maxFixedDiv() it  might overflow. You can use multiply(x,reciprocal(y)) instead. There is a loss of precision on division for the lower mulPrecision() decimals."
+				},
+				"fixed1()": {
+					"notice": "This is 1 in the fixed point units used in this library."
+				},
+				"fractional(int256)": {
+					"notice": "Returns the fractional part of a fixed point number.  In the case of a negative number the fractional is also negative."
+				},
+				"fromFixed(int256)": {
+					"notice": "Converts an int256 in the fixed point representation of this  library to a non decimal. All decimal digits will be truncated."
+				},
+				"fromFixed(int256,uint8)": {
+					"notice": "Converts an int256 in the fixed point representation of this  library to a different representation. The _destinationDigits parameter is the precision of the output x. Values with a precision below than  FixidityLib.digits() will be truncated accordingly."
+				},
+				"integer(int256)": {
+					"notice": "Returns the integer part of a fixed point number."
+				},
+				"maxFixedAdd()": {
+					"notice": "Maximum value that can be safely used as an addition operator."
+				},
+				"maxFixedDiv()": {
+					"notice": "Maximum value that can be safely used as a dividend."
+				},
+				"maxFixedDivisor()": {
+					"notice": "Maximum value that can be safely used as a divisor."
+				},
+				"maxFixedMul()": {
+					"notice": "Maximum value that can be safely used as a multiplication operator."
+				},
+				"maxFixedSub()": {
+					"notice": "Maximum negative value that can be safely in a subtraction."
+				},
+				"maxInt256()": {
+					"notice": "Maximum value that can be represented in an int256"
+				},
+				"maxNewFixed()": {
+					"notice": "Maximum value that can be converted to fixed point. Optimize for"
+				},
+				"minInt256()": {
+					"notice": "Minimum value that can be represented in an int256"
+				},
+				"minNewFixed()": {
+					"notice": "Maximum value that can be converted to fixed point. Optimize for deployment. "
+				},
+				"mulPrecision()": {
+					"notice": "The amount of decimals lost on each multiplication operand."
+				},
+				"multiply(int256,int256)": {
+					"notice": "x*y. If any of the operators is higher than maxFixedMul() it  might overflow."
+				},
+				"newFixed(int256)": {
+					"notice": "Converts an int256 to fixed point units, equivalent to multiplying by 10^digits()."
+				},
+				"newFixed(int256,uint8)": {
+					"notice": "Converts an int256 which is already in some fixed point  representation to that of this library. The _originDigits parameter is the precision of x. Values with a precision higher than FixidityLib.digits() will be truncated accordingly."
+				},
+				"newFixedFraction(int256,int256)": {
+					"notice": "Converts two int256 representing a fraction to fixed point units, equivalent to multiplying dividend and divisor by 10^digits()."
+				},
+				"reciprocal(int256)": {
+					"notice": "1/x"
+				},
+				"subtract(int256,int256)": {
+					"notice": "x-y. You can use add(x,-y) instead. "
+				}
+			},
+			"notice": "This library provides fixed point arithmetic with protection against overflow.  All operations are done with int256 and the operands must have been created  with any of the newFrom* functions, which shift the comma digits() to the  right and check for limits. When using this library be sure of using maxNewFixed() as the upper limit for creation of fixed point numbers. Use maxFixedMul(), maxFixedDiv() and maxFixedAdd() if you want to be certain that those operations don't  overflow.Fixed bugs which allowed updating to 0.8.0 and above.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"FixidityLib.sol": "FixidityLib"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FixidityLib.sol": {
+			"keccak256": "0xe5f0bd53e75415e475c913c53f0809acde830e82758e32d00bf329893761e76d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa4b2691f0d35b7b0a52a6cf764ed3fe7b7460f313756e7c42cd224e008ab3ce",
+				"dweb:/ipfs/QmUoNx2kXAmjR9aXjz9RipJaxnSwsWMunv2XTrRddG2wZF"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,233 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "theta",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "digits",
+						"type": "uint8"
+					}
+				],
+				"name": "cos",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "num_seed",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "lower",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "upper",
+						"type": "int256"
+					}
+				],
+				"name": "getRandomNum",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "pi",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "theta",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "digits",
+						"type": "uint8"
+					}
+				],
+				"name": "sin",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "theta",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "digits",
+						"type": "uint8"
+					}
+				],
+				"name": "tan",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "John Michael Statheros (GitHub: jstat17)",
+			"kind": "dev",
+			"methods": {
+				"cos(int256,uint8)": {
+					"details": "Example input:  cos(11,1) => cos(1.1)                      cos(3,0) => cos(3)",
+					"params": {
+						"digits": ": digits of precision of the angle",
+						"theta": ": angle in radians"
+					},
+					"returns": {
+						"_0": "cos(x)"
+					}
+				},
+				"getRandomNum(int256,int256,int256)": {
+					"params": {
+						"lower": ": lower-bound of the random number",
+						"num_seed": ": integer seed",
+						"upper": ": upper-bound of the random number"
+					},
+					"returns": {
+						"_0": "random int256 between upper and lower (inclusive)"
+					}
+				},
+				"pi()": {
+					"returns": {
+						"_0": "π as int256"
+					}
+				},
+				"sin(int256,uint8)": {
+					"details": "Example input:  sin(11,1) => sin(1.1)                      sin(3,0) => sin(3)",
+					"params": {
+						"digits": ": digits of precision of the angle",
+						"theta": ": angle in radians"
+					},
+					"returns": {
+						"_0": "sin(x)"
+					}
+				},
+				"tan(int256,uint8)": {
+					"details": "Example input:  tan(11,1) => tan(1.1)                      tan(3,0) => tan(3)",
+					"params": {
+						"digits": ": digits of precision of the angle",
+						"theta": ": angle in radians"
+					},
+					"returns": {
+						"_0": "tan(x)"
+					}
+				}
+			},
+			"title": "NumericalMath",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"cos(int256,uint8)": {
+					"notice": "6th order numerical approximation to the cosine function."
+				},
+				"getRandomNum(int256,int256,int256)": {
+					"notice": "Generates a random int256 between some upper and lower bounds using an int256 seed."
+				},
+				"pi()": {
+					"notice": "Returns value of pi to 24 digits of precision."
+				},
+				"sin(int256,uint8)": {
+					"notice": "7th order numerical approximation to the sine function."
+				},
+				"tan(int256,uint8)": {
+					"notice": "Numerical approximation of the tangent function, using the fact that sin(x)/cos(x) = tan(x)."
+				}
+			},
+			"notice": "This library builds on the fixed-point math in FixidityLib with numerical approximations to trigonometric functions, the value of pi, generation of pseudorandom numbers etc.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"NumericalMath.sol": "NumericalMath"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"FixidityLib.sol": {
+			"keccak256": "0xe5f0bd53e75415e475c913c53f0809acde830e82758e32d00bf329893761e76d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa4b2691f0d35b7b0a52a6cf764ed3fe7b7460f313756e7c42cd224e008ab3ce",
+				"dweb:/ipfs/QmUoNx2kXAmjR9aXjz9RipJaxnSwsWMunv2XTrRddG2wZF"
+			]
+		},
+		"NumericalMath.sol": {
+			"keccak256": "0x85cf7bb334d84ebfec6ebc683c3ff04362624f0d5707fa20971e72048d9ae5fa",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://eb05c6f8ba3ba2d5aaaa3d8fa670738454fef2ebbddf895ffb32d7444290513b",
+				"dweb:/ipfs/QmRCDubpBQfdCP3Wp4aBRu1rKT5ZFugSDGsD27vKUUNNkB"
+			]
+		}
+	},
+	"version": 1
+}

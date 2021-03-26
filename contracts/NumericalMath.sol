@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.6; // should work with ^0.8.0 and below
 
 import "./FixidityLib.sol";
 
@@ -7,7 +7,8 @@ import "./FixidityLib.sol";
  * @title NumericalMath
  * @author John Michael Statheros (GitHub: jstat17)
  * @notice This library builds on the fixed-point math in FixidityLib with
- * numerical approximations to trigonometric functions, the value of pi etc.
+ * numerical approximations to trigonometric functions, the value of pi,
+ * generation of pseudorandom numbers etc.
  */
 library NumericalMath {
     /**
@@ -82,6 +83,7 @@ library NumericalMath {
         int256 b = FixidityLib.add(a, FixidityLib.divide(x_4, FixidityLib.newFixed(24)));
         return b*c;
     }
+    
     /**
      * @notice Numerical approximation of the tangent function,
      * using the fact that sin(x)/cos(x) = tan(x).
@@ -147,5 +149,27 @@ library NumericalMath {
             k = !k;
         }
         return x;
+    }
+    
+    /**
+     * @notice Generates a random int256 between some upper
+     * and lower bounds using an int256 seed.
+     * @param num_seed: integer seed
+     * @param lower: lower-bound of the random number
+     * @param upper: upper-bound of the random number
+     * @return random int256 between upper and lower (inclusive)
+     */
+    function getRandomNum(int256 num_seed, int256 lower, int256 upper) public pure returns(int256) {
+        int256 rand_num = FixidityLib.abs(callKeccak256(abi.encodePacked(num_seed))) % (upper-lower+1) + lower;
+        return rand_num;
+    }
+    
+    /**
+     * @notice Helper function to hash a seed using keccak256.
+     * @param seed: bytes object
+     * @return int256 of hashed seed
+     */
+    function callKeccak256(bytes memory seed) internal pure returns(int256) {
+        return int256(uint256(keccak256(seed)));
     }
 }

@@ -1,6 +1,8 @@
 # Random-Walk-NFT
 Submission for the 2021 Chainlink Hackathon.
-This repo worked on concurrently with https://github.com/jstat17/Solidity-Math .
+
+This repo worked on concurrently with https://github.com/jstat17/Solidity-Math
+
 Made using Remix IDE.
 
 ## Ethereum-based random walk NFT

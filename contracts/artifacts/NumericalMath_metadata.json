@@ -8,6 +8,54 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes",
+						"name": "seed",
+						"type": "bytes"
+					}
+				],
+				"name": "callKeccak256",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "bigNum",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "lower",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "upper",
+						"type": "int256"
+					}
+				],
+				"name": "convBtwUpLo",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "int256",
 						"name": "theta",
 						"type": "int256"
@@ -75,6 +123,25 @@
 				"inputs": [
 					{
 						"internalType": "int256",
+						"name": "bigNum",
+						"type": "int256"
+					}
+				],
+				"name": "publicTest",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
 						"name": "theta",
 						"type": "int256"
 					},
@@ -124,6 +191,24 @@
 			"author": "John Michael Statheros (GitHub: jstat17)",
 			"kind": "dev",
 			"methods": {
+				"callKeccak256(bytes)": {
+					"params": {
+						"seed": ": bytes object"
+					},
+					"returns": {
+						"_0": "int256 of hashed seed"
+					}
+				},
+				"convBtwUpLo(int256,int256,int256)": {
+					"params": {
+						"bigNum": ": int256 of some large number",
+						"lower": ": lower-bound of the output number",
+						"upper": ": upper-bound of the output number"
+					},
+					"returns": {
+						"_0": "int256 between upper and lower (inclusive)"
+					}
+				},
 				"cos(int256,uint8)": {
 					"details": "Example input:  cos(11,1) => cos(1.1)                      cos(3,0) => cos(3)",
 					"params": {
@@ -176,6 +261,12 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {
+				"callKeccak256(bytes)": {
+					"notice": "Helper function to hash a seed using keccak256."
+				},
+				"convBtwUpLo(int256,int256,int256)": {
+					"notice": "Helper function to convert some large number to be between an upper and lower bound."
+				},
 				"cos(int256,uint8)": {
 					"notice": "6th order numerical approximation to the cosine function."
 				},
@@ -213,19 +304,19 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0xe5f0bd53e75415e475c913c53f0809acde830e82758e32d00bf329893761e76d",
+			"keccak256": "0x409ec8701ea9f04a90558c5ae997fe6d6c554d4a9d6995052c6538b69d27bdd6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa4b2691f0d35b7b0a52a6cf764ed3fe7b7460f313756e7c42cd224e008ab3ce",
-				"dweb:/ipfs/QmUoNx2kXAmjR9aXjz9RipJaxnSwsWMunv2XTrRddG2wZF"
+				"bzz-raw://3fab26fd072860809cbc1c1b3fa74206602d11f241a5802c667e27e34755bb0a",
+				"dweb:/ipfs/QmZ6xc2AaoT15ncgF2rVSzK28nrjyTN6Z5Fg33p5F3447C"
 			]
 		},
 		"NumericalMath.sol": {
-			"keccak256": "0x85cf7bb334d84ebfec6ebc683c3ff04362624f0d5707fa20971e72048d9ae5fa",
+			"keccak256": "0x89a7d1fec3de5716a422afcc0b9db813542b3caa8db7c054994c6bf6b5d8e454",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eb05c6f8ba3ba2d5aaaa3d8fa670738454fef2ebbddf895ffb32d7444290513b",
-				"dweb:/ipfs/QmRCDubpBQfdCP3Wp4aBRu1rKT5ZFugSDGsD27vKUUNNkB"
+				"bzz-raw://9d79e8ca27acd7b11e09e2d78c65f44be81d72e90ac79f5029b333c63b1b57ab",
+				"dweb:/ipfs/QmRLtRVJmfNezWGSTtnfPoP4hyb3zDdvpnSwXsewNA8zcJ"
 			]
 		}
 	},

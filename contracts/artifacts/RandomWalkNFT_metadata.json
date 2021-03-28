@@ -136,6 +136,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "generateRandomWalkNFT",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -180,6 +193,19 @@
 			},
 			{
 				"inputs": [],
+				"name": "lastOracleRequest",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -215,9 +241,9 @@
 				"name": "randomResult",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "int256",
 						"name": "",
-						"type": "uint256"
+						"type": "int256"
 					}
 				],
 				"stateMutability": "view",
@@ -442,6 +468,25 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "senderToRequest",
+				"outputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "operator",
 						"type": "address"
 					},
@@ -504,6 +549,56 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test1",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "test2",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "theta",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "digits",
+						"type": "uint8"
+					}
+				],
+				"name": "testNumMath",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
 				"type": "function"
 			},
 			{
@@ -667,7 +762,7 @@
 		"userdoc": {
 			"kind": "user",
 			"methods": {
-				"constructor": "Constructor inherits VRFConsumerBase  Network: Kovan Chainlink VRF Coordinator address: 0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9 LINK token address:                0xa36085F69e2889c224210F603D836748e7dC0088 Key Hash: 0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4"
+				"constructor": "Constructor inherits VRFConsumerBase  Network: Kovan Chainlink VRF Coordinator address: 0xdD3782915140c8f3b190B5D67eAc6dc5760C46E9 LINK token address:                0xa36085F69e2889c224210F603D836748e7dC0088 Key Hash: 0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4  Network: Rinkeby Chainlink VRF Coordinator address: 0xb3dCcb4Cf7a26f6cf6B120Cf5A73875B7BBc655B LINK token address:                0x01be23585060835e02b77ef475b0cc51aa1e0709 Key Hash: 0x2ed0feb3e7fd2022120aa84fab1945545a9f2ffc9076fd6156fa96eaff4c1311"
 			},
 			"notice": "Contract for creating random walk map NFTs.",
 			"version": 1
@@ -690,27 +785,27 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0xe5f0bd53e75415e475c913c53f0809acde830e82758e32d00bf329893761e76d",
+			"keccak256": "0x409ec8701ea9f04a90558c5ae997fe6d6c554d4a9d6995052c6538b69d27bdd6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa4b2691f0d35b7b0a52a6cf764ed3fe7b7460f313756e7c42cd224e008ab3ce",
-				"dweb:/ipfs/QmUoNx2kXAmjR9aXjz9RipJaxnSwsWMunv2XTrRddG2wZF"
+				"bzz-raw://3fab26fd072860809cbc1c1b3fa74206602d11f241a5802c667e27e34755bb0a",
+				"dweb:/ipfs/QmZ6xc2AaoT15ncgF2rVSzK28nrjyTN6Z5Fg33p5F3447C"
 			]
 		},
 		"NumericalMath.sol": {
-			"keccak256": "0x85cf7bb334d84ebfec6ebc683c3ff04362624f0d5707fa20971e72048d9ae5fa",
+			"keccak256": "0x89a7d1fec3de5716a422afcc0b9db813542b3caa8db7c054994c6bf6b5d8e454",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://eb05c6f8ba3ba2d5aaaa3d8fa670738454fef2ebbddf895ffb32d7444290513b",
-				"dweb:/ipfs/QmRCDubpBQfdCP3Wp4aBRu1rKT5ZFugSDGsD27vKUUNNkB"
+				"bzz-raw://9d79e8ca27acd7b11e09e2d78c65f44be81d72e90ac79f5029b333c63b1b57ab",
+				"dweb:/ipfs/QmRLtRVJmfNezWGSTtnfPoP4hyb3zDdvpnSwXsewNA8zcJ"
 			]
 		},
 		"RandomWalkNFT.sol": {
-			"keccak256": "0xc79376f104632f27f02ccfe1c2290b217f00044e38bbb6d0e3174bef76f2a73a",
+			"keccak256": "0x78e116656fc8819969323eb477bf928025bf4c4f90e95a98680a830cacbf3878",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6d6280425364cbe11a96c180081cbcdbb9e2004202ed6f5411f40e7028731f0d",
-				"dweb:/ipfs/QmRURWtDY6T32zGvUPyQm1NDSorGCo1wV3GjJYpKvWScK6"
+				"bzz-raw://c3daf1a77615a722e5a6708b505b3d1cd99ad196f9dfeb8d51454cfdec7d637b",
+				"dweb:/ipfs/QmPKEii8Cu998fEme9gD5e6SMHXD96GEwBMk5Xv3b1RoQw"
 			]
 		},
 		"https://github.com/jstat17/Random-Walk-NFT/blob/main/openzeppelin-contracts/introspection/ERC165.sol": {

@@ -19,7 +19,6 @@ contract RandomWalkNFT is ERC721, VRFConsumerBase {
     address internal linkToken = 0x01BE23585060835E02B77ef475b0Cc51aA1e0709;
     uint256 internal fee;
     int256 public randomResult;
-    bytes32 public lastOracleRequest;
     
     struct RandomWalk {
         string name;
@@ -150,7 +149,7 @@ contract RandomWalkNFT is ERC721, VRFConsumerBase {
         requestToMapName[requestID] = string(abi.encodePacked(uint2str(nodes), "-node walk"));
         requestToSender[requestID] = msg.sender;
         requestToNodes[requestID] = nodes;
-        senderToRequest[msg.sender] = requestID;
+        //senderToRequest[msg.sender] = requestID;
         return requestID;
     }
     
@@ -164,7 +163,7 @@ contract RandomWalkNFT is ERC721, VRFConsumerBase {
      */
     function fulfillRandomness(bytes32 requestID, uint256 randomness) internal override {
         randomResult = FixidityLib.abs(int256(randomness));
-        lastOracleRequest = requestID;
+        senderToRequest[requestToSender[requestID]] = requestID;
     }
     
     /**

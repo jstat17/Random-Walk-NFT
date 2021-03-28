@@ -160,7 +160,7 @@ library NumericalMath {
      * @return random int256 between upper and lower (inclusive)
      */
     function getRandomNum(int256 num_seed, int256 lower, int256 upper) public pure returns(int256) {
-        int256 rand_num = FixidityLib.abs(callKeccak256(abi.encodePacked(num_seed))) % (upper-lower+1) + lower;
+        int256 rand_num = convBtwUpLo(callKeccak256(abi.encodePacked(num_seed)), lower, upper);
         return rand_num;
     }
     
@@ -169,7 +169,24 @@ library NumericalMath {
      * @param seed: bytes object
      * @return int256 of hashed seed
      */
-    function callKeccak256(bytes memory seed) internal pure returns(int256) {
+    function callKeccak256(bytes memory seed) public pure returns(int256) {
         return int256(uint256(keccak256(seed)));
+    }
+    
+    /**
+     * @notice Helper function to convert some large number
+     * to be between an upper and lower bound.
+     * @param bigNum: int256 of some large number
+     * @param lower: lower-bound of the output number
+     * @param upper: upper-bound of the output number
+     * @return int256 between upper and lower (inclusive)
+     */
+    function convBtwUpLo(int256 bigNum, int256 lower, int256 upper) public pure returns(int256) {
+        return FixidityLib.add(FixidityLib.abs(bigNum) % FixidityLib.add(FixidityLib.subtract(upper, lower), 1), lower);
+    }
+    
+    function publicTest(int256 bigNum) public pure returns(int256) {
+        int256 _2pi = FixidityLib.multiply(FixidityLib.newFixed(2), pi());
+        return convBtwUpLo(bigNum, 0, _2pi);
     }
 }

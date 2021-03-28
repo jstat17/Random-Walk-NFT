@@ -4,8 +4,7 @@ pragma solidity ^0.6.6;
 
 /**
  * @title FixidityLib
- * @author Gadi Guy, Alberto Cuesta Canada
- * @author John Michael Statheros (GitHub: jstat17)
+ * @author Gadi Guy, Alberto Cuesta Canada / John Michael Statheros (GitHub: jstat17)
  * @notice This library provides fixed point arithmetic with protection against
  * overflow. 
  * All operations are done with int256 and the operands must have been created 

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.6.6;
+pragma solidity ^0.6.6; // should work with ^0.8.0 and below
 
 
 /**
@@ -14,7 +14,7 @@ pragma solidity ^0.6.6;
  * creation of fixed point numbers. Use maxFixedMul(), maxFixedDiv() and
  * maxFixedAdd() if you want to be certain that those operations don't 
  * overflow.
- * @notice Fixed bugs which allowed updating to 0.8.0 and above.
+ * @notice Fixed bugs which allowed updating to 0.8.0 and below.
  */
 library FixidityLib {
 

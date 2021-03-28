@@ -185,8 +185,33 @@ library NumericalMath {
         return FixidityLib.add(FixidityLib.abs(bigNum) % FixidityLib.add(FixidityLib.subtract(upper, lower), 1), lower);
     }
     
-    function publicTest(int256 bigNum) public pure returns(int256) {
-        int256 _2pi = FixidityLib.multiply(FixidityLib.newFixed(2), pi());
-        return convBtwUpLo(bigNum, 0, _2pi);
+    /**
+     * @notice I saw Patrick Collins use this method in a
+     * Chainlink video tutorial, where he took a large
+     * random number and broke it up into multiple
+     * random numbers. The use case is for verifiably
+     * random number generation, so that multiple
+     * random numbers do not need to be generated.
+     * @dev take note that this only generates
+     * a random number between 1 and an upper bound.
+     * Should update so that any range can be
+     * generated.
+     * @param x: the large random number
+     * @param y: the upper bound of the random number,
+     * but this value must mutate with each successive
+     * call of this function.
+     * @param y_orig: the original and unmutating
+     * upper bound of the random number
+     * @return new_rand: the new random number that
+     * is between 1 and upper
+     * @return y: the mutated form of the upper bound
+     * that must be used as the y in the next call of
+     * this function
+     */
+    function getAnotherSplitRand(int256 x, int256 y, int256 y_orig) public pure returns(int256, int256) {
+        int256 new_rand = (x % y)/(y/y_orig) + 1;
+        y *= y;
+        return (new_rand, y);
     }
+    
 }

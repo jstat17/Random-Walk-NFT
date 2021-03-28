@@ -474,7 +474,7 @@
 			}
 		],
 		"devdoc": {
-			"author": "Gadi Guy, Alberto Cuesta CanadaJohn Michael Statheros (GitHub: jstat17)",
+			"author": "Gadi Guy, Alberto Cuesta Canada / John Michael Statheros (GitHub: jstat17)",
 			"kind": "dev",
 			"methods": {
 				"abs(int256)": {
@@ -629,7 +629,7 @@
 					"notice": "x-y. You can use add(x,-y) instead. "
 				}
 			},
-			"notice": "This library provides fixed point arithmetic with protection against overflow.  All operations are done with int256 and the operands must have been created  with any of the newFrom* functions, which shift the comma digits() to the  right and check for limits. When using this library be sure of using maxNewFixed() as the upper limit for creation of fixed point numbers. Use maxFixedMul(), maxFixedDiv() and maxFixedAdd() if you want to be certain that those operations don't  overflow.Fixed bugs which allowed updating to 0.8.0 and above.",
+			"notice": "This library provides fixed point arithmetic with protection against overflow.  All operations are done with int256 and the operands must have been created  with any of the newFrom* functions, which shift the comma digits() to the  right and check for limits. When using this library be sure of using maxNewFixed() as the upper limit for creation of fixed point numbers. Use maxFixedMul(), maxFixedDiv() and maxFixedAdd() if you want to be certain that those operations don't  overflow.Fixed bugs which allowed updating to 0.8.0 and below.",
 			"version": 1
 		}
 	},
@@ -650,11 +650,11 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0xe5f0bd53e75415e475c913c53f0809acde830e82758e32d00bf329893761e76d",
+			"keccak256": "0x778a6346147005e5ab0b639c7060a1f27263620b4ba49a08463f6b1a5052b1dd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://fa4b2691f0d35b7b0a52a6cf764ed3fe7b7460f313756e7c42cd224e008ab3ce",
-				"dweb:/ipfs/QmUoNx2kXAmjR9aXjz9RipJaxnSwsWMunv2XTrRddG2wZF"
+				"bzz-raw://7de9509d3d16b6dac26cc13687566c6f824bf1ffa84e4e67f85e6531710999d8",
+				"dweb:/ipfs/QmW3UMEMe4qmUYffFytTo5MWmzUqd4Se1RoEKi22HCGAYf"
 			]
 		}
 	},

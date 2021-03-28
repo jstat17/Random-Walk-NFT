@@ -81,6 +81,40 @@
 				"inputs": [
 					{
 						"internalType": "int256",
+						"name": "x",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "y_orig",
+						"type": "int256"
+					}
+				],
+				"name": "getAnotherSplitRand",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
 						"name": "num_seed",
 						"type": "int256"
 					},
@@ -109,25 +143,6 @@
 			{
 				"inputs": [],
 				"name": "pi",
-				"outputs": [
-					{
-						"internalType": "int256",
-						"name": "",
-						"type": "int256"
-					}
-				],
-				"stateMutability": "pure",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "int256",
-						"name": "bigNum",
-						"type": "int256"
-					}
-				],
-				"name": "publicTest",
 				"outputs": [
 					{
 						"internalType": "int256",
@@ -219,6 +234,18 @@
 						"_0": "cos(x)"
 					}
 				},
+				"getAnotherSplitRand(int256,int256,int256)": {
+					"details": "take note that this only generates a random number between 1 and an upper bound. Should update so that any range can be generated.",
+					"params": {
+						"x": ": the large random number",
+						"y": ": the upper bound of the random number, but this value must mutate with each successive call of this function.",
+						"y_orig": ": the original and unmutating upper bound of the random number"
+					},
+					"returns": {
+						"_0": "new_rand: the new random number that is between 1 and upper",
+						"_1": "y: the mutated form of the upper bound that must be used as the y in the next call of this function"
+					}
+				},
 				"getRandomNum(int256,int256,int256)": {
 					"params": {
 						"lower": ": lower-bound of the random number",
@@ -270,6 +297,9 @@
 				"cos(int256,uint8)": {
 					"notice": "6th order numerical approximation to the cosine function."
 				},
+				"getAnotherSplitRand(int256,int256,int256)": {
+					"notice": "I saw Patrick Collins use this method in a Chainlink video tutorial, where he took a large random number and broke it up into multiple random numbers. The use case is for verifiably random number generation, so that multiple random numbers do not need to be generated."
+				},
 				"getRandomNum(int256,int256,int256)": {
 					"notice": "Generates a random int256 between some upper and lower bounds using an int256 seed."
 				},
@@ -304,19 +334,19 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0x409ec8701ea9f04a90558c5ae997fe6d6c554d4a9d6995052c6538b69d27bdd6",
+			"keccak256": "0x2a27b0f9b016c60cb5147d7649968406d50721d551980274d949b148174b3c89",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3fab26fd072860809cbc1c1b3fa74206602d11f241a5802c667e27e34755bb0a",
-				"dweb:/ipfs/QmZ6xc2AaoT15ncgF2rVSzK28nrjyTN6Z5Fg33p5F3447C"
+				"bzz-raw://f9868d2aaab5828afa5b0ff2a88f98e6291fdbae010009fe20b39d2958b254fc",
+				"dweb:/ipfs/Qmaw29EUeGF7bkjXcEMUdHdGKjaFrmayStsPQHHPNvbj2y"
 			]
 		},
 		"NumericalMath.sol": {
-			"keccak256": "0x89a7d1fec3de5716a422afcc0b9db813542b3caa8db7c054994c6bf6b5d8e454",
+			"keccak256": "0x710697fefc0c82244f1e6d3bd28efbab2637f18b0e333d7182243063abaf7403",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9d79e8ca27acd7b11e09e2d78c65f44be81d72e90ac79f5029b333c63b1b57ab",
-				"dweb:/ipfs/QmRLtRVJmfNezWGSTtnfPoP4hyb3zDdvpnSwXsewNA8zcJ"
+				"bzz-raw://0ab7c9bdb580d3adf4cc02e5c713feb1743434ff15568433083a5582ce27dbe9",
+				"dweb:/ipfs/QmWRPbj4Sqi7iYLLPNpxJ6U1RGNtt6W65uYwTW8NPjuQ7k"
 			]
 		}
 	},

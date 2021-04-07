@@ -81,6 +81,7 @@ contract RandomWalkNFT is ERC721, VRFConsumerBase {
         bytes32 requestID = senderToRequest[msg.sender];
         require(requestID != 0x0000000000000000000000000000000000000000000000000000000000000000);
         uint256 newID = randomWalks.length;
+        requestToTokenID[requestID] = newID;
         
         int256[] memory xs = new int256[](requestToNodes[requestID]);
         int256[] memory ys = new int256[](requestToNodes[requestID]);

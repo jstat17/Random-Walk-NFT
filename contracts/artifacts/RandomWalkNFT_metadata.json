@@ -193,19 +193,6 @@
 			},
 			{
 				"inputs": [],
-				"name": "lastOracleRequest",
-				"outputs": [
-					{
-						"internalType": "bytes32",
-						"name": "",
-						"type": "bytes32"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
 				"name": "name",
 				"outputs": [
 					{
@@ -775,11 +762,11 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0x2a27b0f9b016c60cb5147d7649968406d50721d551980274d949b148174b3c89",
+			"keccak256": "0x778a6346147005e5ab0b639c7060a1f27263620b4ba49a08463f6b1a5052b1dd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f9868d2aaab5828afa5b0ff2a88f98e6291fdbae010009fe20b39d2958b254fc",
-				"dweb:/ipfs/Qmaw29EUeGF7bkjXcEMUdHdGKjaFrmayStsPQHHPNvbj2y"
+				"bzz-raw://7de9509d3d16b6dac26cc13687566c6f824bf1ffa84e4e67f85e6531710999d8",
+				"dweb:/ipfs/QmW3UMEMe4qmUYffFytTo5MWmzUqd4Se1RoEKi22HCGAYf"
 			]
 		},
 		"NumericalMath.sol": {
@@ -791,11 +778,11 @@
 			]
 		},
 		"RandomWalkNFT.sol": {
-			"keccak256": "0x9d817e55c0d6b45a00aaeef60694628ff1507e038d656b246d257b7772567d80",
+			"keccak256": "0x0a500f15470f8fa74c5decc508ea616dc0f7d675a6e3571a55d57aa68ad9afe7",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bf6bdf22bb029c06030176726a660bfac65aa3b72dc38ec45fa224773ddd3718",
-				"dweb:/ipfs/QmNpnPWAn8RXMKwYfZwKr987xuuYRz17FY2mYTobmrPBCJ"
+				"bzz-raw://2648a720d18e7f4a33ef93a7a473c00377682962a550e9eb914fbe6cf1b1a5fe",
+				"dweb:/ipfs/QmRHKpxUQwBMt94bi1MeWfYRTw3URzLQ5hdhGcokMbu69m"
 			]
 		},
 		"https://github.com/jstat17/Random-Walk-NFT/blob/main/openzeppelin-contracts/introspection/ERC165.sol": {

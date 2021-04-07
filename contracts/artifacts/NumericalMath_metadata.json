@@ -334,11 +334,11 @@
 	},
 	"sources": {
 		"FixidityLib.sol": {
-			"keccak256": "0x2a27b0f9b016c60cb5147d7649968406d50721d551980274d949b148174b3c89",
+			"keccak256": "0x778a6346147005e5ab0b639c7060a1f27263620b4ba49a08463f6b1a5052b1dd",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://f9868d2aaab5828afa5b0ff2a88f98e6291fdbae010009fe20b39d2958b254fc",
-				"dweb:/ipfs/Qmaw29EUeGF7bkjXcEMUdHdGKjaFrmayStsPQHHPNvbj2y"
+				"bzz-raw://7de9509d3d16b6dac26cc13687566c6f824bf1ffa84e4e67f85e6531710999d8",
+				"dweb:/ipfs/QmW3UMEMe4qmUYffFytTo5MWmzUqd4Se1RoEKi22HCGAYf"
 			]
 		},
 		"NumericalMath.sol": {

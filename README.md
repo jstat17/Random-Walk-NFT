@@ -3,10 +3,10 @@ Submission for the 2021 Chainlink Hackathon. Made using Remix IDE.
 
 This repo worked on concurrently with https://github.com/jstat17/Solidity-Math
 
-## Ethereum-based random walk NFT
+## Ethereum-based Random Walk NFT
 A smartcontract that can generate verifiably random walks (using Chainlink VRF), which produces a plot of points that look like a treasure map starting at the origin and ending at some arbitarily-random point.
 
-The frontend's webpage that interacts with the smartcontract uses a web-based python script to display the generated map using the NFT's randomly generated 2-D nodes. The frontend also allows users to generate their NFTs and display them once they are generated onto the Ethereum blockchain. The webpage connects via Metamask.
+The frontend's webpage that interacts with the smartcontract uses a web-based python script to display the generated map using the NFT's randomly generated 2-D nodes. The frontend also allows users to generate their NFTs and display them once they are generated in the Ethereum blockchain. The webpage connects via Metamask.
 
 ## Deployed contract (with source code)
 https://rinkeby.etherscan.io/address/0xc9E02478307B6306edfd2a96642576eDF15f17fa#code

@@ -15,7 +15,13 @@
    		// init environment
   		languagePluginLoader
     	// then run Python code
-    	.then(() => console.log(pyodide.runPython(`import sys; sys.version`)));
+    	.then(function() { 
+			pyodide.runPythonAsync(`import sys; sys.version`).then(function(args) {
+				console.log(args);
+				updateStatus("Ready");
+			});
+			
+		});
 
 		// then import plt from matplotlib
 		//let py_import_mpl = "from matplotlib import plt";
@@ -60,7 +66,7 @@
 
         async function loadWeb3() {
             if (typeof web3 !== 'undefined') {
-				web3 = await new Web3(web3.currentProvider);
+				web3 = await new Web3(window.ethereum);//web3 = await new Web3(web3.currentProvider);
 			}
 			//if (window.ethereum) {
                 //web3 = new Web3(window.ethereum);
@@ -703,8 +709,11 @@
 	}
 ];
 
+			// ↓ Old contract, has bugs, but useful for testing	(ABI is the same)
 			//var contractAddress = "0x8BFc9b3bdCE5d4005C42E899FF872F5ac6f5a9E5";
-            var contractAddress = "0xc9E02478307B6306edfd2a96642576eDF15f17fa";
+            
+			// ↓ Newest contract
+			var contractAddress = "0xc9E02478307B6306edfd2a96642576eDF15f17fa";
 			return await new web3.eth.Contract(abi, contractAddress);
         }
 
@@ -712,7 +721,7 @@
             await loadWeb3();
             window.contract = await loadContract();
 			await getCurrentAccount();
-            updateStatus("Ready");
+            updateStatus("Loading Python...");
         }
 
 		async function getCurrentAccount() {

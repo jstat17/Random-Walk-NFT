@@ -807,20 +807,6 @@
 			});
 		}
 
-		async function test_func() {
-			var x = 1;
-			console.log("start");
-			while (true) {
-				await setTimeout(function() {
-					console.log(x);
-				}, 5000);
-				x += 1;
-				if (x > 4) {
-					break;
-				}
-			}
-		}
-
 		async function getRequest() {
 			var request;
 			const call_request = await window.contract.methods.senderToRequest(account).call().then(function(req) {

@@ -24,3 +24,14 @@ Each unique NFT is generated and stored in a struct `Randomwalk`, which has the 
 -  `generateRandomWalk` then generates the random walk once the request has been reserved for the user's account. If the request is not reserved, then a blank request of zeros will be what is in `senderToRequest[msg.sender]`. If this check is a success, then a random walk is generated and pushed to the array of walks. Afterwards, the request for the user is set back to the blank request of zeros.
 -  `seeRandomWalk` will return all the properties of the RWalk described above as a json-formatted object, which is easily unpacked in JavaScript.
 -  `setTokenURI` will set the token URI of a specific RWalk with ID of `tokenID`. This functionality was included in the smartcontract, but not used in this project's frontend. It was created as it is extra functionality that is useful to have for the future.
+
+#### Viewing The Frontend
+I used node to create a local http server with `npm install -g http-server` within folder `/frontend` and then start it with `http-server`. Metamask should connect automatically and display in the Status area of the webpage. Python should also be installed (this takes sometimes above 10-15 seconds).
+
+##### Frontend Interaction (requires Metamask)
+- Status shows what scripts are currently being run by the browser
+- Clicking "Get # of walks in circulation" will display the total supply of NFTs in the smartcontract
+- The first textbox allows the user to enter the number of nodes they want in their walk (40), then clicking "Generate Random Walk" will proceed all the various steps to fully create an NFT (watch the demo video linked above).
+- The second textbox will display a graphed representation of the NFT with Python's Matplotlib library, once the unique ID of some RWalk is entered, and the button "Plot Random Walk" is clicked.
+
+**Note that all of Pyodide's Python libraries must be installed before the plotting can happen. The first time an NFT is plotted, there is quite a time delay, as it can be seen in the JavaScript console that many modules have to be installed. Once the imports have been done and the first NFT is plotted, then changing the number in the ID entry-textbox will load up the next NFT much faster.**

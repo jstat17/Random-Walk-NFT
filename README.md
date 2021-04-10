@@ -1,7 +1,5 @@
 # Random-Walk-NFT
-Submission for the 2021 Chainlink Hackathon. Made using Remix IDE.
-
-This repo worked on concurrently with [Solidity-Math](https://github.com/jstat17/Solidity-Math).
+Submission for the 2021 Chainlink Hackathon. Made using Remix IDE. Worked on concurrently with [Solidity-Math](https://github.com/jstat17/Solidity-Math).
 
 ## Ethereum-based Random Walk NFT
 A smartcontract that can generate verifiably random walks (using Chainlink VRF), which produces a plot of points that look like a treasure map starting at the origin and ending at some arbitarily-random point.

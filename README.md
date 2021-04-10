@@ -31,7 +31,7 @@ I used node to create a local http server with `npm install -g http-server` with
 ##### Frontend Interaction (requires Metamask)
 - Status shows what scripts are currently being run by the browser
 - Clicking "Get # of walks in circulation" will display the total supply of NFTs in the smartcontract
-- The first textbox allows the user to enter the number of nodes they want in their walk (40), then clicking "Generate Random Walk" will proceed all the various steps to fully create an NFT (watch the demo video linked above).
+- The first textbox allows the user to enter the number of nodes they want in their walk (≤40), then clicking "Generate Random Walk" will proceed all the various steps to fully create an NFT (watch the demo video linked above).
 - The second textbox will display a graphed representation of the NFT with Python's Matplotlib library, once the unique ID of some RWalk is entered, and the button "Plot Random Walk" is clicked.
 
 **Note that all of Pyodide's Python libraries must be installed before the plotting can happen. The first time an NFT is plotted, there is quite a time delay, as it can be seen in the JavaScript console that many modules have to be installed. Once the imports have been done and the first NFT is plotted, then changing the number in the ID entry-textbox will load up the next NFT much faster.**

@@ -15,7 +15,7 @@ The frontend's webpage that interacts with the smartcontract uses a web-based py
 
 ## How To Use This Repo
 ##### Compiling
-The file RandomWalk.sol must be compiled with NumericalMath.sol and FixidityLib.sol in the same folder. The rest of the files can fetch from external repositories. Note that  `pragma solidity ^0.6.6;` because the VRFConsumerBase.sol for the Chainlink VRF Oracle is on `0.6.6`.
+The file RandomWalk.sol must be compiled with NumericalMath.sol and FixidityLib.sol in the same folder. The rest of the files can fetch from external repositories. Note that  `pragma solidity ^0.6.6;` for all contracts because the VRFConsumerBase.sol for the Chainlink VRF Oracle is on `0.6.6`.
 
 ##### RWalk NFTs
 Each unique NFT is generated and stored in a struct `Randomwalk`, which has the properties `name`, `ID`, `nodes` to store the simple data. Each NFT also has `int256[] x` and `int256[] y` which are the arrays that store each coordinate component of each node of the walk.
